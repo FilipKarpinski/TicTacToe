@@ -1,0 +1,59 @@
+body {
+  background-color: lightblue;
+}
+
+.container {
+  background-color: lightcoral;
+  margin: auto;
+  width: 510px;
+  height: 600px;
+  position: relative;
+  top: 50px;
+}
+
+.score {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100px;
+  font-family: 'Indie Flower', cursive;
+  font-size: 4em;
+  position: relative;
+  top: -60px;
+}
+
+.scoreX {
+  font-size: 1.3em;
+  color: red;
+}
+
+.scoreO {
+  font-size: 1.3em;
+  color: blue;
+}
+
+.divider {
+  font-size: 1.3em;
+  color: white;
+}
+
+.field {
+  height: 170px;
+  width: 170px;
+  font-family: 'Indie Flower', cursive;
+  font-size: 10em;
+  text-align: center;
+  line-height: 85px;
+}
+
+.board {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+/*# sourceMappingURL=style.css.map */
