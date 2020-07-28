@@ -67,6 +67,12 @@ function addScore(winner){
     document.getElementById('scoreO').innerHTML=''
     document.getElementById('scoreO').innerHTML=scoreO+'    O'
     }
+    else if(winner==''){
+        document.getElementById('scoreX').innerHTML=''
+        document.getElementById('scoreX').innerHTML='X    '+scoreX
+        document.getElementById('scoreO').innerHTML=''
+        document.getElementById('scoreO').innerHTML=scoreO+'    O'
+    }
 }
 
 function gameEnd(winner){
@@ -104,3 +110,11 @@ for(let i=0;i<fields.length;i++){
             })
     })
 }
+document.getElementById('reset').addEventListener('click',()=>{
+    reset()
+    scoreX=0
+    scoreO=0
+    addScore('')
+    startingPlayer='O'
+    player=startingPlayer
+})
